@@ -1,0 +1,2 @@
+# Ignore all class files that Maven creates
+target/classes/*.class
