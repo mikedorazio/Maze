@@ -19,7 +19,9 @@ public class MazeFrame
 	
 	/**
 	  * Constructs the JFrame that will host all components of the Maze.
-	  * @param title the title for this JFrame.
+	  * @param title the title for this Maze.
+	  * @param rows the number of rows for this Maze
+	  * @param cols the number of columns for this Maze
 	  */
 	public MazeFrame(String title, int rows, int cols) {
 		super();
@@ -41,10 +43,20 @@ public class MazeFrame
 		getContentPane().add(west, BorderLayout.WEST);
 	}
 
+	/**
+	 * Sets the title of this Maze
+	 * @param title the title of this Maze
+	 * @param rows the number of rows for this Maze
+	 * @param cols the number of columns for this Maze
+	 */
 	public void setTitle(String title, int rows, int cols) {
 		super.setTitle(title + " size - " + rows + " x " + cols);
 	}
 
+	/**
+	  * The main() entry point of this program.
+	  * @param args the array of command line arguments given
+	  */
 	public static void main(String[] args) {
 		MazeFrame mf = null;
 		switch (args.length) {
