@@ -1,7 +1,7 @@
 import java.util.*;
 import java.awt.Point;
 
-import org.apache.log4j.*;
+import org.apache.logging.log4j.*;
 
 /**
   * Class that represents a "perfect" maze.  Each cell is connected to every other cell
@@ -10,7 +10,7 @@ import org.apache.log4j.*;
   */
 public class Maze {
 		// logger
-	public static Logger logger = Logger.getLogger(Maze.class);
+	public static Logger logger = LogManager.getLogger(Maze.class);
 		/** the number of rows in this maze */
 	private int rows;
 		/** the number of rows in this maze */

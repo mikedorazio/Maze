@@ -1,6 +1,6 @@
 import java.awt.*;
 import javax.swing.*;
-import org.apache.log4j.*;
+import org.apache.logging.log4j.*;
 
 /**
   * The JFrame that hosts all components for a Maze.
@@ -9,7 +9,7 @@ import org.apache.log4j.*;
 public class MazeFrame
 	extends JFrame {
 
-	public static Logger logger = Logger.getLogger(MazeFrame.class);
+	public static Logger logger = LogManager.getLogger(MazeFrame.class);
 		/** grid sizes the user can choose */
 	public static final int[] GRID_SIZES = {3, 4, 8, 16, 28, 32, 36, 40, 44, 50, 75, 90, 120, 150, 200};
 	public static final String TITLE = "Mike's Maze Frame";

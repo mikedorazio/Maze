@@ -4,7 +4,7 @@ import javax.swing.*;
 import javax.swing.border.*;
 import javax.swing.event.*;
 
-import org.apache.log4j.*;
+import org.apache.logging.log4j.*;
 
 /**
   * A control panel that hosts components used by the MazePanel.

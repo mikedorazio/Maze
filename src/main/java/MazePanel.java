@@ -4,7 +4,7 @@ import javax.swing.event.*;
 import java.util.*;
 import javax.swing.*;
 
-import org.apache.log4j.*;
+import org.apache.logging.log4j.*;
 
 /**
   * A JPanel that host 
@@ -14,7 +14,7 @@ public class MazePanel
 	extends JPanel 
 	implements ActionListener, MouseInputListener {
 
-	public static Logger logger = Logger.getLogger(MazePanel.class);
+	public static Logger logger = LogManager.getLogger(MazePanel.class);
 		/**  the Maze this panel will host */
 	private Maze maze;
 		/** width of maze in pixels */

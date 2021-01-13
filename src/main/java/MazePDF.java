@@ -2,7 +2,7 @@ import java.awt.*;
 import java.io.*;
 import java.util.*;
 
-import org.apache.log4j.*;
+import org.apache.logging.log4j.*;
 import com.lowagie.text.*;
 import com.lowagie.text.pdf.*;
 
@@ -12,7 +12,7 @@ import com.lowagie.text.pdf.*;
  */
 public class MazePDF {
 		// logger
-	public static Logger logger = Logger.getLogger(MazePDF.class);
+	public static Logger logger = LogManager.getLogger(MazePDF.class);
 	Maze maze;
 	FileOutputStream fos;
 	public static final String FILENAME = "c:/Personal/01164926/src/java/apps/maze/maze.pdf";

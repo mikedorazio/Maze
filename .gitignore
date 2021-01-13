@@ -1,3 +1,4 @@
 # Ignore all class files that Maven creates
 target
 target/classes/*.class
+*.log
