@@ -7,7 +7,7 @@ import javax.swing.*;
 import org.apache.logging.log4j.*;
 
 /**
-  * A JPanel that host 
+  * A JPanel that hosts the Frame that we will use to render the Maze.
   * @author Mike D'Orazio
   */
 public class MazePanel 
@@ -396,7 +396,7 @@ public class MazePanel
 			logger.debug("MazePDF() created");
 			pdf.setMaze(maze);
 			logger.debug("about to show maze");
-			Runtime.getRuntime().exec("C:/Program Files (x86)/Adobe/Reader 10.0/Reader/AcroRd32.exe maze.pdf");
+			Runtime.getRuntime().exec("C:/Program Files (x86)/Adobe/Acrobat Reader DC/Reader/AcroRd32.exe maze.pdf");
 		}
 		catch (Throwable e) {
 			parent.setTitle("Mike");

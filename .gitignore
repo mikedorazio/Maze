@@ -1,4 +1,9 @@
 # Ignore all class files that Maven creates
 target
 target/classes/*.class
+
+# Ignore log files
 *.log
+
+# Ignore the PDF file that gets created on a Print
+maze.pdf

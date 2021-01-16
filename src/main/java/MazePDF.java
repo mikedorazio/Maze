@@ -15,7 +15,7 @@ public class MazePDF {
 	public static Logger logger = LogManager.getLogger(MazePDF.class);
 	Maze maze;
 	FileOutputStream fos;
-	public static final String FILENAME = "c:/Personal/01164926/src/java/apps/maze/maze.pdf";
+	public static final String FILENAME = "c:/Users/01164926/src/java/apps/maze/maze.pdf";
 	//public static final String FILENAME = "maze.pdf";
 
 	public MazePDF() {
