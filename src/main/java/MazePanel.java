@@ -214,18 +214,24 @@ public class MazePanel
 			// draw starting "S" and finishing "F"
 		g.setColor(Color.red);
 		g.setFont(new Font("Times New Roman", Font.ITALIC, height));
+			// S(Start) should be on left side of the upper left cell
 		g.drawString("S", 0, height);
-		g.drawString("F", width*(maze.getColumns()-1), height*maze.getRows());
+		
+		int widthOfLetterF = g.getFontMetrics().stringWidth("F");
+			// F(Finish) should be on right side of lower right cell
+		g.drawString("F", width*(maze.getColumns()) - widthOfLetterF, height*maze.getRows());
 		g.setColor(Color.black);
 
 			// draw outer box
 		int offset = 0;
+			// draw north side
 		g.drawLine(0+offset, 0+offset, width*maze.getColumns()+offset, offset);
-		g.drawLine(width*maze.getColumns()+offset, offset, 
-					width*maze.getColumns()+offset, height*maze.getRows()+offset);
-		g.drawLine(width*maze.getColumns()+offset, height*maze.getRows()+offset,
-					0+offset, height*maze.getRows()+offset);
-		g.drawLine(0+offset, height*maze.getRows()+offset, 0+offset, 0+offset);
+			// draw east side and leave the last cell at the bottom not drawn to indicate the finish position
+		g.drawLine(width*maze.getColumns()+offset, offset, width*maze.getColumns()+offset, height*(maze.getRows() -1)+offset);
+			// draw south side
+		g.drawLine(width*maze.getColumns()+offset, height*maze.getRows()+offset, 0+offset, height*maze.getRows()+offset);
+			// draw west side and leave the first cell at the top not drawn to indicate the start position
+		g.drawLine(0+offset, height*maze.getRows()+offset, 0+offset, height);
 
 			// draw walls that currently exist.  If we are in the middle of creating the
 			// maze, only the walls that are left standing will be drawn.  This will give
