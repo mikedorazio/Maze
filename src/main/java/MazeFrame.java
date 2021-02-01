@@ -11,7 +11,7 @@ public class MazeFrame
 
 	public static Logger logger = LogManager.getLogger(MazeFrame.class);
 		/** grid sizes the user can choose */
-	public static final int[] GRID_SIZES = {3, 4, 8, 16, 28, 32, 36, 40, 44, 50, 75, 90, 120, 150, 200};
+	public static final int[] GRID_SIZES = {3, 4, 8, 16, 32, 50, 75, 100, 150, 200};
 	public static final String TITLE = "Mike's Maze Frame";
 	public static final int ROWS = 4, COLS = 4;
 		/** the JPanel that will host the Maze */
